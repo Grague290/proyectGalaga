@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaga - Proyecto Graficacion y Multimedia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="score-board">
+            <div class="score-display">
+                <h2>GALAGA</h2>
+                <div class="score-item">
+                    <span class="score-label">PUNTUACIÓN</span>
+                    <span id="current-score" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">NIVEL</span>
+                    <span id="current-level" class="score-value">1</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">VIDAS</span>
+                    <span id="current-lives" class="score-value">3</span>
+                </div>
+            </div>
+            <div class="top-scores">
+                <h3>TOP 5</h3>
+                <ol id="top-scores-list"></ol>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <script src="galaga.js"></script>
+        </div>
+
+        <div class="controls-board">
+            <h2>CONTROLES</h2>
+            <div class="control-item">
+                <span class="control-key">← →</span>
+                <span class="control-action">Mover Nave</span>
+            </div>
+            <div class="control-item">
+                <span class="control-key">ESPACIO</span>
+                <span class="control-action">Disparar</span>
+            </div>
+            <div class="control-item">
+                <span class="control-key">R</span>
+                <span class="control-action">Reiniciar Juego</span>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
